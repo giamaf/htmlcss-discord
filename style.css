@@ -1,0 +1,220 @@
+/* Reset CSS */
+body {
+    Padding: 0;
+    Box-sizing: border-box;
+    font: 14px Arial, Helvetica, sans-serif;
+}
+
+/* Custom properties */
+:root {
+    --border: 1px dashed black;
+    --paddingm: 10px;
+    --paddings: 5px;
+    --marginm: 10px;
+    --font-size: 2.5em;
+}
+
+/* Generics */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-grey {
+    background-color: lightgray;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-lightgreen {
+    background-color: rgb(33, 165, 154);
+}
+
+.bg-red {
+    background-color: rgb(234, 105, 109);
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.border {
+    border: 2px dashed black
+}
+
+.borderwhite {
+    border: 2px dashed white
+}
+
+/* !Header top*/
+header {
+    background-image: url(img/jumbo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.header-top {
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(158, 207, 224); */
+    padding: 12px;
+    font-size: 20px;
+}
+
+.header-top>* {
+    display: flex;
+    border: var(--border);
+    padding: var(--paddingm);
+    margin: 5px 0px 5px;
+    /* background-color: rgb(208, 149, 26); */
+}
+
+
+header div.logo {
+    flex-basis: 3%;
+    justify-content: flex-start;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 0px;
+    color: white;
+    padding-inline-start: 0px;
+}
+
+.header-top .link {
+    flex-basis: 60%;
+    justify-content: center;
+}
+
+header div.login {
+    flex-basis: 2%;
+    justify-content: flex-end;
+    color: black;
+    border: 4px solid white;
+    border-radius: 50px;
+    background-color: white;
+}
+
+/* !Header bottom */
+.header-bottom {
+    justify-content: center;
+    /* background-color: rgb(0, 0, 120); */
+    padding: 60px;
+    height: 600px;
+}
+
+.box-bottom {
+    /* background-color: rgb(231, 101, 234); */
+    /* border: var(--border); */
+    flex-basis: 50%;
+    text-align: center;
+    color: antiquewhite;
+    font-size: var(--font-size)
+}
+
+div>p {
+    font-size: 31px;
+    line-height: 42px;
+}
+
+
+/* Main */
+
+section {
+    height: 600px;
+    padding: 40px 0px;
+}
+
+.image-1st {
+    background-image: url(img/item1.svg);
+    background-size: 100%;
+    background-position-x: -20px;
+    background-position-y: 50px;
+    background-repeat: no-repeat;
+    flex-basis: 70%;
+    /* background-color: rgb(27, 121, 255); */
+}
+
+div.text h1 {
+    font-size: 4.5em;
+    margin-bottom: var(--marginm);
+}
+
+div.text.border p {
+    font-size: 26px;
+    margin: 0;
+}
+
+.text {
+    flex-basis: 40%;
+    /* background-color: rgb(253, 176, 192); */
+}
+
+.bigbox {
+    flex-basis: 100%;
+    height: 600px;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(26, 29, 31);
+    padding: 40px;
+}
+
+/* Footer top */
+.footer-top {
+    min-height: 600px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid purple;
+}
+
+.left {
+    flex-basis: 30%;
+}
+
+.right {
+    flex-basis: 70%;
+}
+
+.footer-nav {
+    height: 100%;
+    flex-basis: 100%;
+}
+
+.col-nav {
+    border: 2px dashed white;
+    flex-basis: 25%;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    background-color: aquamarine;
+    margin-top: 20px;
+    min-height: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom>* {
+    background-color: rgb(253, 176, 192);
+    padding: var(--paddings);
+}
