@@ -2,7 +2,7 @@
 body {
     Padding: 0;
     Box-sizing: border-box;
-    font: 14px Arial, Helvetica, sans-serif;
+    font: 14px Helvetica N Arial, Helvetica, sans-serif;
 }
 
 /* Custom properties */
@@ -16,7 +16,7 @@ body {
 
 /* Generics */
 .container {
-    max-width: 1400px;
+    max-width: 1800px;
     margin: 0 auto;
 }
 
@@ -60,6 +60,11 @@ body {
     border: 2px dashed white
 }
 
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
 /* !Header top*/
 header {
     background-image: url(img/jumbo.png);
@@ -69,16 +74,16 @@ header {
 
 
 .header-top {
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     /* background-color: rgb(158, 207, 224); */
-    padding: 12px;
-    font-size: 20px;
+    padding: 20px;
+    font-size: 21px;
 }
 
 .header-top>* {
     display: flex;
-    border: var(--border);
+    /* border: var(--border); */
     padding: var(--paddingm);
     margin: 5px 0px 5px;
     /* background-color: rgb(208, 149, 26); */
@@ -94,6 +99,7 @@ ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 60px;
     margin: 0px;
     color: white;
@@ -109,7 +115,7 @@ header div.login {
     flex-basis: 2%;
     justify-content: flex-end;
     color: black;
-    border: 4px solid white;
+    padding: 10px 15px;
     border-radius: 50px;
     background-color: white;
 }
@@ -136,7 +142,6 @@ div>p {
     line-height: 42px;
 }
 
-
 /* Main */
 
 section {
@@ -146,7 +151,7 @@ section {
 
 .image-1st {
     background-image: url(img/item1.svg);
-    background-size: 100%;
+    background-size: 80%;
     background-position-x: -20px;
     background-position-y: 50px;
     background-repeat: no-repeat;
@@ -160,6 +165,7 @@ div.text h1 {
 }
 
 div.text.border p {
+    padding-left: 40px;
     font-size: 26px;
     margin: 0;
 }
