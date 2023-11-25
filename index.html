@@ -22,11 +22,11 @@
 
 <body>
     <header>
-        <!-- !Header top -->
-        <div class="header-top flex container">
+        <!-- !Navbar -->
+        <nav class="nav-bar flex container">
             <div class="logo"><img src="img/logo.svg" alt="logoimg"></div>
             <div class="link">
-                <ul>
+                <ul class="flex">
                     <li><a href="#">Scarica</a></li>
                     <li><a href="#">Perché Discord</a></li>
                     <li><a href="#">Nitro</a></li>
@@ -34,19 +34,26 @@
                     <li><a href="#">Assistenza</a></li>
                 </ul>
             </div>
-            <div class="login">Accedi</div>
-        </div>
+            <div id="btn-white-small">Accedi</div>
+        </nav>
 
-        <!-- !Header bottom -->
-        <div class="header-bottom flex">
-            <div class="box-bottom">
-                <h1>Il tuo posto per parlare</h1>
-                <p>Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica mondiale, o
-                    semplicemente di un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più
-                    facile chiacchierare ogni giorno e ritrovarsi più spesso.</p>
-                <a href="#">Scarica per Mac</a>
-                <a href="#">Apri Discord nel tuo browser</a>
-            </div>
+        <!-- !Jumbotron -->
+        <div class="jumbotron container">
+            <h1>Il tuo posto per parlare</h1>
+            <p>Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica mondiale, o
+                semplicemente di un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più
+                facile chiacchierare ogni giorno e ritrovarsi più spesso.</p>
+            <nav>
+                <ul class="flex">
+                    <li>
+                        <span><i class="fa-solid fa-arrow-down-long fa-xl"></i></span>
+                        <a id="btn-white" href="#">Scarica per Mac</a>
+                    </li>
+                    <li>
+                        <a id="btn-black" href="#">Apri Discord nel tuo browser</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
 
