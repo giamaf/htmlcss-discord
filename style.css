@@ -2,7 +2,7 @@
 body {
     Padding: 0;
     Box-sizing: border-box;
-    font: 14px Helvetica N Arial, Helvetica, sans-serif;
+    font: 14px Helvetica, Arial, Helvetica, sans-serif;
 }
 
 /* Custom properties */
@@ -105,6 +105,14 @@ a {
     font-size: 1.9em;
 }
 
+#btn-black {
+    color: white;
+    padding: 20px 55px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 1.9em;
+}
+
 #btn-last {
     color: white;
     padding: 20px 55px;
@@ -113,12 +121,12 @@ a {
     font-size: 1.9em;
 }
 
-#btn-black {
+#btn-last-small {
     color: white;
-    padding: 20px 55px;
+    padding: 10px 15px;
     border-radius: 50px;
-    background-color: rgba(0, 0, 0, 0.8);
-    font-size: 1.9em;
+    background-color: rgb(146, 160, 220);
+    font-size: 1em;
 }
 
 .fa-arrow-down-long {
@@ -245,23 +253,56 @@ section {
 
 /* Footer */
 footer {
-    background-color: rgb(26, 29, 31);
+    background-color: rgb(36, 39, 42);
     padding: 40px;
 }
 
-/* Footer top */
+/* Footer top left */
 .footer-top {
-    min-height: 600px;
+    color: white;
+    /* min-height: 600px; */
     padding-bottom: 40px;
-    border-bottom: 1px solid purple;
+    border-bottom: 1px solid rgb(118, 136, 212);
+    align-items: baseline;
+}
+
+.left h2 {
+    font-size: 2.5em;
+    color: rgb(118, 136, 212);
+    margin: 0;
+}
+
+.left li {
+    display: flex;
+    gap: 10px;
+    padding: 15px 0;
+}
+
+#ita-flag {
+    width: 23px;
+    height: 15px;
+}
+
+.footer-top h3,
+h5 {
+    margin: 0
+}
+
+.left li:last-of-type {
+    gap: 30px;
 }
 
 .left {
     flex-basis: 30%;
 }
 
+/* Footer top right */
 .right {
     flex-basis: 70%;
+}
+
+.right h3 {
+    color: rgb(118, 136, 212);
 }
 
 .footer-nav {
@@ -270,13 +311,18 @@ footer {
 }
 
 .col-nav {
-    border: 2px dashed white;
+    /* border: 2px dashed white; */
     flex-basis: 25%;
+}
+
+.col-nav li {
+    font-size: 1.1em;
+    padding: 10px 0;
 }
 
 /* Footer bottom */
 .footer-bottom {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     margin-top: 20px;
     min-height: 60px;
     justify-content: space-between;
@@ -284,6 +330,6 @@ footer {
 }
 
 .footer-bottom>* {
-    background-color: rgb(253, 176, 192);
+    /* background-color: rgb(253, 176, 192); */
     padding: var(--paddings);
 }
