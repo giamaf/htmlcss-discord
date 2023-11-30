@@ -35,6 +35,10 @@ body {
     filter: invert(1);
 }
 
+.big {
+    height: 1100px;
+}
+
 .bg-white {
     background-color: white;
 }
@@ -53,7 +57,7 @@ body {
 
 h1,
 h2 {
-    font-size: 3.5em;
+    font-size: 2.8em;
 }
 
 p {
@@ -192,7 +196,7 @@ section {
 }
 
 .space div.text>* {
-    padding-left: 160px;
+    padding-left: 210px;
 }
 
 /* todo Dove trovarsi è facile */
@@ -233,20 +237,15 @@ section {
     justify-content: center;
 }
 
-.big {
-    height: 1200px;
-}
-
 #with-pattern {
     padding: 50px 0;
     margin-bottom: 20px;
-    font-size: 2.5em;
+    font-size: 1.7em;
     background-image: url(img/stars.svg);
-    background-size: 60%;
+    background-size: 40%;
     background-position-x: center;
     background-repeat: no-repeat;
 }
-
 
 /* Footer */
 footer {
@@ -264,7 +263,7 @@ footer {
 }
 
 .left h2 {
-    font-size: 2.5em;
+    font-size: 2em;
     color: rgb(118, 136, 212);
     margin: 0;
 }
@@ -272,7 +271,7 @@ footer {
 .left li {
     display: flex;
     gap: 10px;
-    padding: 15px 0;
+    padding: 15px 20px;
 }
 
 #ita-flag {
